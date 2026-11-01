@@ -1,0 +1,10 @@
+# Xcode / XcodeGen output
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+build/
+.swiftpm/
+# Mac reconstruct tool binary
+/reconstruct
+.DS_Store

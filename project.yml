@@ -1,0 +1,30 @@
+name: ScanForPrint
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  ScanForPrint:
+    type: application
+    platform: iOS
+    sources:
+      - path: ScanForPrint
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.scanforprint
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: ScanForPrint/Info.plist
+      properties:
+        CFBundleDisplayName: Scan for Print
+        NSCameraUsageDescription: The camera and LiDAR sensor are used to capture 3D scans.
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        UIRequiredDeviceCapabilities: [arkit]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait]
